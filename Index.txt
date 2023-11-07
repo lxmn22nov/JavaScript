@@ -1,2 +1,7 @@
 1. Variables(let, var, const).
 2. Datatypes and ECMA standards.
+3. Datatypes Conversion and Operations.
+4. Comparison of Datatypes.
+   Datatypes Summary.
+5. Stack and Heap Memory.
+6. Strings.
