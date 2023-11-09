@@ -8,10 +8,10 @@ tinderUser.name = "Jacob"
 tinderUser.isLoggedIn = false
 
 // console.log(tinderUser);
-console.log(Object.keys(tinderUser));           // OUTPUT: [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));         // OUTPUT: [ '123abc', 'Jacob', false ]
-console.log(Object.entries(tinderUser));        // Returns an array of key/values of the enumerable properties of an object.
-console.log(Object.hasOwnProperty('isLoggedIn')); // Determines whether an object has a property with the specified name.
+// console.log(Object.keys(tinderUser));           // OUTPUT: [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));         // OUTPUT: [ '123abc', 'Jacob', false ]
+// console.log(Object.entries(tinderUser));        // Returns an array of key/values of the enumerable properties of an object.
+// console.log(Object.hasOwnProperty('isLoggedIn')); // Determines whether an object has a property with the specified name.
 
 
 const regularUser = {
@@ -45,3 +45,34 @@ const obj4 = Object.assign({}, obj1, obj2, obj3)
 
 const obj5 = {...obj1, ...obj2, ...obj3}
 // console.log(obj5);
+
+// =============================== Objects destructuring and JSON API ====================================
+
+const course = {
+    courseName: "Chai aur Code",
+    price: "free",
+    courseInstructor: "Hitesh Choudhary"
+}
+
+// course.courseInstructor
+
+// object destructuring. 
+const {courseInstructor: tutor} = course
+
+// console.log(tutor);
+
+// ===============================================================================================================
+
+// JSON
+
+// {
+//     "name": "laxman"
+//     "age": 21
+//     "Citizen": "Indian"
+// }
+
+[
+    {},
+    {},
+    {}
+]
