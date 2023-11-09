@@ -10,3 +10,4 @@
 ==========================================
 8. Arrays.
 9. Objects/ Objects destructuring and JSON API.
+10. Functions and Parameters/functions with objects.
