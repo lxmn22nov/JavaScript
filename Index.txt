@@ -7,7 +7,8 @@
 5. Strings.
 6. Numbers and Maths.
 7. Date and Time.
-==========================================
+=================================================================================================================
 8. Arrays.
 9. Objects/ Objects destructuring and JSON API.
 10. Functions and Parameters/functions with objects.
+11. Global And Local Scopes/Scope Level and mini hoisting.
