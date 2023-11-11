@@ -57,3 +57,21 @@ const loggedInFromEmail = true
 // if (loggedInFromGoogle || loggedInFromEmail) {
 //     console.log(`Logged in Sucessfully.`);
 // }
+
+// Nullish Coalescing Operator (??): null undefined
+
+let val1;
+// val1 = 10 ?? 5                       // prints first value.
+// val1 = null ?? 10                       // if null presents, automatically value jumps to the second value.
+// val1 = undefined ?? 15 
+val1 = null ?? 10 ?? 20
+
+// console.log(val1);
+
+// Ternary Operator 
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice >= 120 ? console.log("Less than 80.") : console.log("More than 80.");
+
+// NOTE: Nullish Coalescing Operator and Ternary Operator are different, not same.
