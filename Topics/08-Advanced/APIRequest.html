@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+
+<body style="background-color: black;" <div style="color: white;">
+    <div style="color: white">
+        <h1 style="color: rgb(115, 115, 201);">XMLHttpRequest | readyState</h1>
+        0. | UNSENT | Client has been created. open() not called yet. <br>
+        1. | OPENED | open() has been called. <br>
+        2. | HEADERS_RECEIVED | send() has been called, & headers & status are available. <br>
+        3. | LOADING | Downloading; responseText holds partial data. <br>
+        4. | DONE | The operation is complete.
+    </div>
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/hiteshchoudhary'
+    // interact with servers.
+    const xhr = new XMLHttpRequest
+    xhr.open('GET', requestURL)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            // converting "string" to "JSONObject".
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data)
+            // showing undefined, because the data is coming in the form of "string" instead objects.
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+</script>
+
+</html>
